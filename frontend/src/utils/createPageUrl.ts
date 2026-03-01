@@ -1,0 +1,1 @@
+export function createPageUrl(n: string): string {\n  return '/' + n.toLowerCase().replace(/\s+/g, '-');\n}

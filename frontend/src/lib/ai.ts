@@ -1,0 +1,1 @@
+import { apiFetch } from './api';\n\nexport async function invokeAI(opts: { prompt: string; systemPrompt?: string; jsonSchema?: object }): Promise<unknown> {\n  return apiFetch('POST', '/api/ai/invoke', opts);\n}
